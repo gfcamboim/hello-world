@@ -2,11 +2,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# import dataset Titanic (available in Kaggle)
 train_df = pd.read_csv(
-    r'C:\Users\Guilh\OneDrive\UFRGS\UFRGS\Doutorado\Disciplinas\2019 - 2º Semestre\Machine Learning\Aula 4\train.csv')
+    r'Path where the CSV file is stored\File name.csv')
 test_df = pd.read_csv(
-    r'C:\Users\Guilh\OneDrive\UFRGS\UFRGS\Doutorado\Disciplinas\2019 - 2º Semestre\Machine Learning\Aula 4\test.csv')
+    r'Path where the CSV file is stored\File name.csv')
 
+# data information
 train_df.info()
 
 print(train_df.describe())
